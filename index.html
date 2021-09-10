@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | Fylo data storage component</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -40,12 +43,21 @@
       </article>
 
       <article class="content__right">
-        <p>You’ve used 815 GB of your storage</p>
+        <p class="right__title">You’ve used <span class="rigth__bold">815 GB</span> of your storage</p>
         <div class="content__span">
-          <p><span>185</span>GB Left</p>
+          <p><span class="number">18<span class="number number--2">5</span></span></p>
+          <p class="span__grey">GB Left</p>
         </div>
-        <div class="barra"></div>
-        <div class="barrados"></div>
+
+        <div class="triangulo">
+
+        </div>
+        <div class="right__barra">
+          <div class="barra"></div>
+          <div class="barra--dos"></div>
+          <div class="barra--circle"></div>
+        </div>
+        
         <div class="content__footer">
           <p>0 GB</p>
           <p>1000 GB</p>
@@ -55,14 +67,7 @@
 
     </div>
 
-  
-    
-    You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
+    <img class="fondo" src="./images/bg-desktop.png" alt="">
     
   </main>
   

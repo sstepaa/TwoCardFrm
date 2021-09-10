@@ -10,7 +10,7 @@
     --rayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
     --Very-Dark-Blue: hsl(229, 57%, 11%);
-    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Gradient: hsl(6, 100%, 80%) , hsl(335, 100%, 65%);
 }
 body{
     overflow: hidden;
@@ -20,8 +20,14 @@ body{
  width: 100%;
  height: 100vh;
 }
+.fondo{
+    max-width: 2000px;
+    width: 100%;
+    margin-top: 476px;
+
+}
 .content__flex{
-    border: 1px  solid red;
+    
     max-width:2000px;
     width: 100%;
     height: 100vh;
@@ -80,3 +86,121 @@ header{
     background-color: var(--Dark-Blue);
     border-radius: 1rem;
 }
+
+/*-----------Modificaciones a los elementos dentro del contenedor derecho----------*/
+.right__title{
+    color:var(--Pale-Blue);
+    font-weight: 400;
+    width: 100%;
+    padding: 40px;
+    margin-left: 35px;
+    margin-top: 0;
+}
+.rigth__bold{
+    font-weight: 700;
+}
+/*------------Armado de la barra de gradientes---------------*/
+.right__barra{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.barra{
+    width: 100%;
+    max-width: 600px;
+    height: 27px;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 2rem;
+    margin: 0 auto;
+    
+}
+
+.barra--dos{
+    position: relative;
+    top: -23px;
+    left: 78px;
+    width: 100%;
+    max-width:450px;
+    height: 18px;
+    background:linear-gradient(90deg ,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    border-radius: 2rem;
+}
+
+.barra--circle{
+    position: relative;
+    top: -39px;
+    left: 509px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 2px solid hsl(6, 100%, 80%);
+}
+
+/*-----Inicio del footer de la tarjeta--------*/
+.content__footer{
+    position: absolute;
+    top:154px;
+    left: 79px;
+    
+    max-width: 600px;
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content__footer p{
+    font-weight: 700;
+    color: var(--Pale-Blue);
+}
+
+/*-----------------------Inicio de banner----------*/
+.content__span{
+    width: 100%;
+    max-width: 240px;
+    height: 100px;
+    background-color: #fff;
+    border-radius:1rem 1rem 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: -73px;
+    left: 423px;
+}
+.content__span .span__grey{
+    color: var(--rayish-Blue);
+    font-weight: 700;
+    padding-left: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+ .number{
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.triangulo{
+    width: 0;
+     height: 0;
+     border-right: 50px solid transparent;
+     border-top: 50px solid transparent;
+     border-left: 50px solid #fff ;
+     border-bottom: 0px solid #fff;
+
+     transform: rotate(180deg);
+     position: absolute;
+     top: 27px;
+     left: 563px;
+}
+
+
