@@ -14,217 +14,58 @@
 }
 body{
     overflow: hidden;
-}
-.background{
- background-color:var(--Very-Dark-Blue);
- width: 100%;
- max-width: 2000px;
- height: 100vh;
-}
-.fondo{
-    position: relative;
-    top: 479px;
-    left: 0;
-    background-image: url(/images/bg-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 2000px;
-    max-width:2000px;
-    width: 100%;
-    height: 50vh;
-}
-.content__flex{
-    
-    max-width:1200px;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 100;
-}
-/*------------Modificacion del contenedor izquierdo ---------------*/
-.content__left{
-    position: relative;
-    top: 355px;
-    left: 407px;
-    max-width: 450px;
-    height: 280px;
-    background-color: var(--Dark-Blue);
-    border-radius: 1rem 8rem 1rem 1rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-/*-----------------Modificacion de los elementos dentro del contenedor izquierdo--------*/
-header{
-    margin-left:49px;
-    margin-bottom: -70px;
-}
-.content__icons{
-    
-    margin-left: 20px;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-.content__icon{
-    width: 60px;
-    height: 60px;
-    line-height: 76px;
-    text-align: center;
-    border-radius: 1rem;
     background-color: var(--Very-Dark-Blue);
 }
-.content__icon img{
-    width: 1.9rem;
-    height: 1.9rem;
-}
-
-/*---------Modificaciones del contenedor derecho-------------*/
-
-.content__right{
-    position: relative;
-    top: 135px;
-    left: 913px;
-    max-width:750px;
-    height: 220px;
-    background-color: var(--Dark-Blue);
-    border-radius: 1rem;
-}
-
-/*-----------Modificaciones a los elementos dentro del contenedor derecho----------*/
-.right__title{
-    color:var(--Pale-Blue);
-    font-weight: 400;
-    width: 100%;
-    padding: 40px;
-    margin-left: 35px;
-    margin-top: 0;
-}
-.rigth__bold{
-    font-weight: 700;
-}
-/*------------Armado de la barra de gradientes---------------*/
-.right__barra{
-    width: 100%;
-    height: 50px;
-    position: absolute;
-}
-.barra{
-    width: 100%;
-    max-width: 600px;
-    height: 27px;
-    background-color: var(--Very-Dark-Blue);
-    border-radius: 2rem;
-    margin: 0 auto;
-    
-}
-
-.barra--dos{
-    position: relative;
-    top: -23px;
-    left: 78px;
-    width: 100%;
-    max-width:450px;
-    height: 18px;
-    background:linear-gradient(90deg ,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
-    border-radius: 2rem;
-}
-
-.barra--circle{
-    position: relative;
-    top: -39px;
-    left: 509px;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background-color: #fff;
-    border: 2px solid hsl(6, 100%, 80%);
-}
-
-/*-----Inicio del footer de la tarjeta--------*/
-.content__footer{
-    position: absolute;
-    top:154px;
-    left: 79px;
-    
-    max-width: 600px;
-    width: 100%;
-    height: 30px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.content__footer p{
-    font-weight: 700;
-    color: var(--Pale-Blue);
-}
-
-/*-----------------------Inicio de banner----------*/
-.content__span{
-    width: 100%;
-    max-width: 240px;
-    height: 100px;
-    background-color: #fff;
-    border-radius:1rem 1rem 0 1rem;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-    top: -73px;
-    left: 423px;
-}
-.content__span .span__grey{
-    color: var(--rayish-Blue);
-    font-weight: 700;
-    padding-left: 15px;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-
- .number{
-    color: #000;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 100px;
-}
-
-.triangulo{
-    width: 0;
-     height: 0;
-     border-right: 50px solid transparent;
-     border-top: 50px solid transparent;
-     border-left: 50px solid #fff ;
-     border-bottom: 0px solid #fff;
-
-     transform: rotate(180deg);
-     position: absolute;
-     top: 27px;
-     left: 563px;
-}
-
+/*Modificando el contenedor donde vamos a poner los demas elementos*/
+/*----Modo 375PX RESPOSIVO----*/
 @media (max-width:375px){
-    body{
-        position: inherit;
-      width: 100%;
-      max-width: 1000px;
-      height: auto;
-      overflow: hidden;
-    }
-   .background{
+    .background{
         background-image: url(/images/bg-mobile.png);
         background-repeat: no-repeat;
-        background-size: cover;
-   }
 
-   .content__flex {
-      top: 0;
-   }
+        max-width: 23rem;
+        width: 100%;
+        height: auto;
+    }
+/*-----------------Modificacion de la primera tarjeta----------*/
+    .content__left{
+        background-color: var(--Dark-Blue);
+        max-width: 20rem;
+        width: 100%;
+        height: 200px;
+        border-radius: 1rem 6rem 1rem 1rem;
+    }
+
+    .content__icons{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items:flex-start ;
+    }
+    /*---------Alineacion del titulo de la tarjeta---------*/
+    .top{
+        margin-left: 25px;
+        padding: 20px;
+    }
+
+    /*----------Alineacion de los iconos-----------*/
+    .button{
+        margin-left: 34px;
+        padding: 7px;
+    }
+    .content__icon{
+        text-align: center;
+        line-height: 3.425rem;
+
+        display: inline-block;
+        width:3.225rem;
+        height: 3.225rem;
+        border-radius: 0.5rem;
+        background-color: var(--Very-Dark-Blue);
+        margin-right: 10px;
+    }
 }
+
+
+
