@@ -109,13 +109,15 @@ height: 100vh;
 .content__right{
     max-width:700px;
     width: 100%;
-    height: 15.625rem;
+    height: 13.625rem;
     background-color: var(--Dark-Blue);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
+    margin-top: 30px;
+
 }
 
 /*-----------Modificaciones a los elementos dentro del contenedor derecho----------*/
@@ -124,71 +126,65 @@ height: 100vh;
     color:var(--Pale-Blue);
     font-weight: 400;
     align-self: flex-start;
+    margin-left: 30px;
     
 }
 .rigth__bold{
     font-weight: 700;
 }
 /*------------Armado de la barra de gradientes---------------*/
-.right__barra{
-    border: 1px solid red;
-    max-width: 600px;
-    width: 100%;
-    height: 30px;
+.conteiner__barra{
     position: absolute;
-}
-.barra{
-    width: 100%;
-    max-width: 550px;
-    height: 27px;
-    background-color: var(--Very-Dark-Blue);
-    border-radius: 2rem;
-    position: relative;
-    top: 0;
-    left: 0;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     
 }
-
-.barra--dos{
-    position: relative;
-    top:-13px;
-    left:53px;
-    width: 100%;
-    max-width:470px;
-    height: 18px;
-    background:linear-gradient(90deg ,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
-    border-radius: 2rem;
+.conteiner__barra .barra{
+    width: 600px;
+    height: 27px;
+    background:var(--Very-Dark-Blue);
+    border-radius:50px ;
 }
-
-.barra--circle{
-    position: relative;
-    top:-58px;
-    left:484px;
+.conteiner__barra .barra span{
+    width: 450px;
+    height: 22px;
+    margin-top: 2.7px;
+    border-radius: 50px;
+    background:linear-gradient(90deg ,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    display: block;
+}
+.conteiner__barra .barra .circle{
+    display: inline-block;
     width: 15px;
     height: 15px;
     border-radius: 100%;
-    background-color: #fff;
-    border: 2px solid hsl(6, 100%, 80%);
-}*
+    background: #fff;
+    border: 1px solid hsl(6, 100%, 80%);
+    position: relative;
+    top: -80%;
+    left: 72%;
 
+}
 /*-----Inicio del footer de la tarjeta--------*/
-/*.content__footer{
+.content__footer{
     max-width: 600px;
     width: 100%;
     height: 30px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 30px;
 }
 
 .content__footer p{
     font-weight: 700;
     color: var(--Pale-Blue);
-}*/
+}
 
 /*-----------------------Inicio de banner----------*/
-/*
+
 .content__span{
     width: 100%;
     max-width: 240px;
@@ -200,10 +196,11 @@ height: 100vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     position: absolute;
-    top: -73px;
-    left: 423px;
+    top: 29%;
+    left: 72%;
+
+    
 }
 .content__span .span__grey{
     color: var(--rayish-Blue);
@@ -230,7 +227,7 @@ height: 100vh;
 
      transform: rotate(180deg);
      position: absolute;
-     top: 27px;
-     left: 563px;
-}*/
+     top: 98%;
+     left: 58.6%;
+}
 
